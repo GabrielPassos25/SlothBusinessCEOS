@@ -1,0 +1,14 @@
+Bom, primeiramente, sugiro que o nome da "empresa" seja slothbusiness, para que assim a gente tenha mais produtos a oferecer e fica mais fácil de fazer as páginas.
+Além disso, a home já está bem desenvolvida, quase que um one-page.
+Porém falta organizar muitas coisa, dentre elas:
+1° - A imagem da planta que não condiz com nada.
+2° - Alguns textos.
+3° - A imagem do "Contate-nos".
+4° - Organizar a navbar que está precária.
+Além de realizar o desenvolvimento de todas as outras páginas.
+
+A ideia principal seria trocar a imagem da planta por uma imagem da equipe, onde poderiamos colocar no texto ao lado dela o famoso "Quem somos?" e um breve texto descritivo sobre a equipe e tal tal tal.
+Linkar as páginas de cada produto aos respectivos icones.
+Qualquer recomendação falar no grupo do wpp.
+Atensiosamente,
+		Gabriel Passos.
