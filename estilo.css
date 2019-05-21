@@ -1,34 +1,52 @@
+html{
+    height:100%
+}
 body{
+    text-align:left;
+    background: #fff;
     margin:0;
     padding:0;
-    font-family:sans-serif;
+    height:100%;
+    width:1920;
+}
+*{
+    list-style:none;
+    padding:0px;
+    margin:0px;
+}
+#all{
+    height:100%;
+    width:100%;
+    margin:auto;
 }
 /*----------Cabeçalho---------*/
-#Cabeçalho{
+#Cabecalho{
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(imagens/teste3.jpeg);
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
+    text-align:center;
 }
-.usuário{
+.usuario{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
     position: absolute;
+    text-align:center;
 }
-.usuário img{
+.usuario img{
     border-radius: 50%;
     width:250px;
     border:2px solid transparent;
     position: center;
 }
-.usuário h1{
+.usuario h1{
     color: #fff;
     font-weight: bold;
     margin:10px;
 }
-.usuário p{
+.usuario p{
     color:#fff
 }
 .scroll{
@@ -53,134 +71,101 @@ body{
     100%{transform: translateY(10px);}
 }
 
-/*--Abaixo Nav-bar--*/
-.sobre{
-    padding-top: 200px;
-    padding-bottom: 50px;
+/*--Nav-bar--*/
+*{
+    margin:0;
+    padding:0;
 }
-.teste2-img{
-    margin-top:0px;
-    height:250px;
+.bg-image{
+    background-color: #000;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:70px;
 }
-
-.col-md-6{
-    margin-top:20px;
-}
-.nav-bar{
-    top:0;
+.header{
     position:sticky;
-    z-index: 2;
+    width:100%;
+    height: 70px;
 }
-.navbar{
-    background-color: #000;
+.sub-header{
+    position:sticky;
+    width:1200px;
+    height:70px;
+    margin: 0 auto;
 }
-.nav-bar .fa-bars{
-    font-size: 25px;
-    color:#fff;
+.sub-header .left-menu{
+    float:left;
 }
-.navbar-toggler{
-    outline:none !important;
-}
-.navbar-nav{
-    float: right;
-    text-align: right;
-}
-.nav-link{
-    color: #fff !important;
-}
-.navbar-brand img{
-    height:50px;
-}
-.navbar-brand{
-    color:#fff;
-}
-/*--Resumo--*/
-.sobre{
-    padding-top: 50px;
-    padding-bottom: 30px;
-    background: #f9f9f9;
-}
-.sobre h3{
-    margin-top:20px;
-    padding-top: 10px;
-    margin-bottom: 50px;
-    position:relative;
-}
-.timeline{
-    list-style-type: none;
-    position: relative;
-}
-.timeline:before{
-    content: '';
-    background: #555;
-    display: inline-block;
+.sub-header .logo a{
     position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 1;
-}
-.sobre b{
-    padding-left: 12px;
-}
-.timeline li{
-    margin-top: 20px;
-    margin-bottom:20px;
-    margin-left: 20px;
-    background: #fff;
-}
-.timeline li h4{
-    background-color: #000;
-    padding: 5px 0 5px 20px;
+    font-size: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
     color: #fff;
-    font-size:15px;
+    top: 15px;
+    font-family: 'Playfair Display SC', 'Maiden Orange', 'Roboto Condensed';
 }
-.timeline li h4 span{
-    font-weight: bold;
-    color: #ccc;
+.sub-header .right-menu{
+    float: right;
 }
-.timeline li:before{
-    content: '';
-    background: #fff;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border:3px solid #000;
-    left: 20px;
-    width: 20px;
-    height:20px;
-    z-index: 1;
+.sub-header ul li {
+    float: left;
+    list-style: none;
+    min-width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px 2px;
+}
+.sub-header ul li a{
+    display: block;
+    text-align:center;
+    border-radius:3px;
+    font-family: 'Playfair Display SC', 'Maiden Orange', 'Roboto Condensed';
+    letter-spacing: -0.2px;
+    font-weight: 20px;
 }
 /*--Serviços--*/
-.serviços{
-    padding-top:50px;
+.servicos{
+    padding-top:100px;
     padding-bottom:50px;
 }
-.serviços h1{
-    margin-bottom: 15px;
+.servicos .resumo{
+    text-align:center;
 }
-.serviços-caixa{
+.servicos h1{
+    margin-bottom: 15px;
+    position: relative;
+    top: 50%;
+    margin-top:-25px;
+    left:46.5%;
+    margin-left:-100px;
+}
+.servicos-caixa{
     background: #f9f9f9;
     padding:10px;
     margin-top: 20px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
 }
-.serviços-caixa .fa{
+.servicos-caixa .fa{
     margin: 0 10px;
     font-size: 20px;
 }
-.serviços-caixa span{
-    margin: 3px;
+.servicos-caixa span{
+    margin: 225px;
     font-size:20px;
     font-weight: bold;
+    text-align:center;
 }
-.serviços-caixa p{
+.servicos-caixa p{
     font-size: 15px;
     margin-top:20px;
     color: #777;
+    text-align:center;
 }
-.serviços-caixa:hover{
+.servicos-caixa:hover{
     background: #000;
     color: #fff;
     border-top-right-radius: 0;
@@ -189,8 +174,29 @@ body{
     border-bottom-right-radius: 50px;
     transition: 1s;
 }
-.serviços-caixa:hover p{
+.servicos-caixa:hover p{
     color: #fff;
+}
+.coluna1{
+    background-color: white;
+    margin-top: 1px;
+    float: left;
+    width: 33%; 
+    height: 200px; 
+}
+.coluna2{
+    background-color: white;
+    margin-top: 1px;
+    float: left;
+    width: 33%; 
+    height: 200px; 
+}
+.coluna3{
+    background-color: white;
+    margin-top: 1px;
+    float: left;
+    width: 34%; 
+    height: 200px; 
 }
 /*--Contato--*/
 .contato{
@@ -215,4 +221,20 @@ body{
     margin-top: 50px;
     color: #fff;
     padding-top:10px;
+}
+/*--Sobre--*/
+.menu{
+    background-color: white;
+    margin-top: 1px;
+    float: left;
+    width: 50%; 
+    height: 500px; 
+}
+.conteudo{
+    background-color: white;
+    float: right;
+    margin-top: 50px;
+    width: 50%;
+    height: 500px;
+    text-align: center;
 }
