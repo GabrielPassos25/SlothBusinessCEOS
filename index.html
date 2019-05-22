@@ -2,10 +2,9 @@
 
 <head>
     <title>SlothView</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=devide-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <link href="https://fonts.googleapis.com/css?family=Maiden+Orange|Playfair+Display+SC|Roboto+Condensed&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,23 +23,19 @@
             </div>
         </div>
     </section>
-    <!--Usuário-->
-    <header class="bg-image">
-        <div class="sub-header">
-            <ul class="left-menu">
-                <li><a href="#">Home</a></li>
+    <!--NavBar-->
+    <header>
+        <div class="logo">SlothBusiness</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Downloads</a></li>
                 <li><a href="#">Tutorial</a></li>
-            </ul>
-            <div class="logo">
-                <a href="#">SlothBusiness</a>
-            </div>
-            <ul class="right-menu">
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Atualizações</a></li>
                 <li><a href="#">Notícias</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <!--Sobre-->
     <div class="Sobre-classe" id="sobre">
@@ -49,20 +44,44 @@
                 <img src="imagens/equipe.png" width="900" height="450" class="teste2-img">
             </div>
             <div class="conteudo">
-                <h3>Quem somos?</h3>
-                <p> Pousou em meio as rochas. Suas asas se fecharam, seu corpo comecava a se esfriar. O peso dos anos
-                    fazia suas penas se esfarelarem e sua chama amiudar. Percebeu que era a hora da partida. Olhou para
-                    o céu estrelado, morrer era uma das leis da natureza, mas nem por isso era algo bom. Guinchou
-                    fracamente, seu fogo apagou, seu corpo caiu no chão e se transformou em cinzas negras.
-                    Após alguns segundos, as partículas das cinzas começaram a se agitar a ponto de queimarem.
-                    Juntaram-se em um redemoinho de fogo para formar um novo ser. Das chamas surgiu uma nova ave a piar
-                    sons melancólicos.
-                </p>
+                <h2>Conheça um pouco mais sobre nós!</h2>
+                <p> Somos uma empresa de tecnologia dedicada a transformar vidas e tornar sonhos em realidade por meio de softwares, dinâmicos, intuitivos e de alta qualidade, que buscam transformar a sua preguiça em produtividade. Buscamos,ainda, sempre inovar em nossos campos de atuação, incrementando nossos softwares nas mais diversas áreas.</p>
+                <p> Além disso, sempre estamos à procura de:</p>
+                <p><i class="far fa-check-circle"></i>Garantir um ambiente divertido e agradavél em nossos softwares.</p>
+                <p><i class="far fa-check-circle"></i>Ampliar nosso campo de atuação.</p>
+                <p><i class="far fa-check-circle"></i>Entregar satisfação e qualidade.</p>
+                <p>Desde nossa criação, estabelecemos algumas metas a serem batidas ao longo da nossa atuação. Confira algumas, junto da porcentagem de realização de cada uma:</p>
+                <div class="row">
+                    <div class="coluna2">
+                        <h4>Mais de 900 mil usuários:</h4>
+                        <div class="meter">
+                            <span style="width: 50%"></span>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mano">
+                        <div class="coluna2">
+                            <h4>Mais de 1 milhão de downloads:</h4>
+                            <div class="meter">
+                                <span style="width: 99%"></span>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="man">
+                        <div class="coluna2">
+                            <h4>Prêmio Software do Ano:</h4>
+                            <div class="meter">
+                                <span style="width: 99%"></span>
+                            </div> 
+                        </div>
+                    </div>
+                </div>      
             </div>
         </div>
     </div>
-
-
     <!--Serviços-->
     <div class="Servicos" id="servicos">
         <div class="container">
@@ -71,20 +90,20 @@
             <div class="row">
                 <div class="coluna1">
                     <div class="servicos-caixa">
-                        <i class="fa fa-suitcase"></i><span>SlothView</span>
-                        <p>Aplicativo para procrastinadores<br></p>
+                        <span><i class="fa fa-suitcase"></i>SlothView</span>
+                        <p>Aplicativo para procrastinadores</p>
                     </div>
                 </div>
                 <div class="coluna2">
                     <div class="servicos-caixa">
-                        <i class="fa fa-code"></i><span>SlothCode</span>
-                        <p>Aplicativo para programadores<br></p>
+                        <span><i class="fas fa-code"></i>SlothCode</span>
+                        <p>Aplicativo para programadores</p>
                     </div>
                 </div>
                 <div class="coluna3">
                     <div class="servicos-caixa">
-                        <i class="fa fa-heartbeat"></i><span>SlothHealth</span>
-                        <p>Aplicativo para quem quer cuidar da saúde<br></p>
+                        <span><i class="fa fa-heartbeat"></i>SlothHealth</span>
+                        <p>Aplicativo para quem quer cuidar da saúde</p>
                     </div>
                 </div>
             </div>
@@ -92,26 +111,25 @@
     </div>
     <!--Contato-->
     <div class="Contato" id="contato">
-        <div class="containter text-center">
+        <div class="container">
             <h1>Contate-nos</h1>
-            <p class="text-center">Contatos</p>
             <div class="row">
-                <div class="col-md-4">
-                    <i class="fa fa-facebook"></i>
+                <div class="coluna4">
+                    <i class="fab fa-facebook"></i>
+                    <p>SlothBusiness</p>
+                </div>     
+                <div class="coluna4">
+                    <i class="fab fa-instagram"></i>
                     <p>SlothBusiness</p>
                 </div>
-                <div class="col-md-4">
-                    <i class="fa fa-instagram"></i>
-                    <p>SlothBusiness</p>
-                </div>
-                <div class="col-md-4">
+                <div class="coluna4">
                     <i class="fa fa-envelope"></i>
                     <p>SlothBusiness@ufc.br</p>
                 </div>
             </div>
         </div>
-        <div class="footer text-center">
-            <p>SlothBusiness<i class="fa fa-copyright"> 2019</i></p>
+        <div class="footer">
+            <p>SlothBusiness<i class="fas fa-copyright">2019</i></p>
         </div>
     </div>
     </section>

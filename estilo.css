@@ -1,23 +1,9 @@
-html{
-    height:100%
-}
-body{
-    text-align:left;
-    background: #fff;
-    margin:0;
-    padding:0;
-    height:100%;
-    width:1920;
-}
-*{
-    list-style:none;
-    padding:0px;
-    margin:0px;
-}
-#all{
-    height:100%;
+html,body{
     width:100%;
-    margin:auto;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
 }
 /*----------Cabeçalho---------*/
 #Cabecalho{
@@ -27,6 +13,7 @@ body{
     background-size:cover;
     background-attachment: fixed;
     text-align:center;
+    position:relative;
 }
 .usuario{
     top:50%;
@@ -70,61 +57,49 @@ body{
     0%{transform: translateY(0);}
     100%{transform: translateY(10px);}
 }
-
-/*--Nav-bar--*/
-*{
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    padding:0 100px;
+    background:#000;
+    width:100%;
+    box-sizing: border-box;
+}
+header .logo{
+    color:#fff;
+    height:50px;
+    line-height:50px;
+    font-size:24px;
+    float:left;
+    font-weight:bold;
+}
+header nav{
+    float:right;
+}
+header nav ul{
     margin:0;
     padding:0;
+    display:flex;
 }
-.bg-image{
-    background-color: #000;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    height:70px;
+header nav ul li a{
+    height:50px;
+    line-height:50px;
+    padding:0 20px;
+    color:#fff;
+    text-decoration:none;
 }
-.header{
-    position:sticky;
-    width:100%;
-    height: 70px;
+header nav ul li a:hover, header nav ul li a.active{
+    color:#fff;
+    background: #221199;
 }
-.sub-header{
-    position:sticky;
-    width:1200px;
-    height:70px;
-    margin: 0 auto;
-}
-.sub-header .left-menu{
-    float:left;
-}
-.sub-header .logo a{
-    position: absolute;
-    font-size: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-decoration: none;
-    color: #fff;
-    top: 15px;
-    font-family: 'Playfair Display SC', 'Maiden Orange', 'Roboto Condensed';
-}
-.sub-header .right-menu{
-    float: right;
-}
-.sub-header ul li {
-    float: left;
-    list-style: none;
-    min-width: 100px;
-    height: 30px;
-    line-height: 30px;
-    margin: 20px 2px;
-}
-.sub-header ul li a{
-    display: block;
-    text-align:center;
-    border-radius:3px;
-    font-family: 'Playfair Display SC', 'Maiden Orange', 'Roboto Condensed';
-    letter-spacing: -0.2px;
-    font-weight: 20px;
+.menu-toggle{
+    color:#000;
+    float:right;
+    line-height:50px;
+    font-size:24px;
+    cursor:pointer;
+    display:none;
 }
 /*--Serviços--*/
 .servicos{
@@ -148,16 +123,18 @@ body{
     margin-top: 20px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
+    width:500px;
+    margin-left:60px;
 }
 .servicos-caixa .fa{
     margin: 0 10px;
     font-size: 20px;
 }
 .servicos-caixa span{
-    margin: 225px;
+    margin: 170px;
     font-size:20px;
     font-weight: bold;
-    text-align:center;
+    text-align:relative;
 }
 .servicos-caixa p{
     font-size: 15px;
@@ -207,22 +184,43 @@ body{
     background-attachment: fixed;
     color: #fff;
 }
+.contato .container h1{
+    margin-top:2px;
+}
 .contato .row{
     padding:30px 0;
     font-size: 22px;
 }
-.contato .col-md-4 .fa{
-    padding: 10px;
-    font-size: 40px;
-}
 .footer{
     background: #000;
-    height: 50px;
+    height: 55px;
     margin-top: 50px;
     color: #fff;
-    padding-top:10px;
+    padding-top:2px;
+}
+.footer p{
+    text-align:center;
+}
+.coluna4{
+    background-color: transparent;
+    margin-top:1px;
+    float: left;
+    width:33%;
+    height: 100px;
+    text-align:center;
+}
+.contato .container{
+    text-align:center;
 }
 /*--Sobre--*/
+.sobre .coluna-1{
+    width:50%;
+    height:100px;
+}
+.sobre .coluna0{
+    width:50%;
+    height:100px;
+}
 .menu{
     background-color: white;
     margin-top: 1px;
@@ -233,8 +231,48 @@ body{
 .conteudo{
     background-color: white;
     float: right;
-    margin-top: 50px;
+    margin-top: 2px;
     width: 50%;
     height: 500px;
-    text-align: center;
+}
+.conteudo h2{
+    text-align:center;
+}
+.conteudo p{
+    text-align:left;
+    margin-top:1px;
+}
+.conteudo .meter{
+    height:7px;
+    position:right;
+    background: #555;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+    padding:10px;
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    width:200px
+}
+.conteudo .meter > span {
+    display:block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: green;
+    background-image: linear-gradient(center bottom,rgb(43,194,83) 37%,rgb(84,240,84) 69%);
+    box-shadow: inset 0 2px 9px  rgba(255,255,255,0.3),inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: right;
+    overflow: hidden;
+}
+.conteudo .mano{
+    margin-top:14px;
+    font-size:16;
+    margin-left:-90px;
+}
+.conteudo .man{
+    margin-top:14px;
+    font-size:16;
+    margin-left:75px;
 }
