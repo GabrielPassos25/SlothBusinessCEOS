@@ -1,0 +1,47 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+.title1, .title2, .title3 {
+    margin-top: 50px;
+    grid-column: 1 / 3;
+    text-align: center;
+  }
+.title1 {
+    grid-row: 1;
+  }
+.title2 {
+    grid-row: 2;
+  }
+.title3 {
+    grid-row: 3;
+  }
+
+.description1, .description2, .description3 {
+    grid-column: 3 / 6;
+    grid-row: 1;
+  }
+.description1 {grid-row: 1;}
+.description2 {grid-row: 2;}
+.description3 {grid-row: 3;}
+
+  .button {
+    color: white;
+    background-color: blue;
+    border-color: black;
+    padding: 15px 32px;
+    float: right;
+    text-align: right;
+    font-size: 16px;
+    border-radius: 10px;
+    font-display: right;
+  }
+
+  .button:hover{
+    color: white;
+    background-color: green;
+    font-size: 18px;
+    transition: 0.2s;
+  }
