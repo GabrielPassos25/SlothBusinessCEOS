@@ -65,6 +65,7 @@ header{
     background:#000;
     width:100%;
     box-sizing: border-box;
+    z-index: 1;
 }
 header .logo{
     color:#fff;
@@ -280,7 +281,6 @@ header nav ul li a:hover, header nav ul li a.active{
     font-size: 50;
     text-align: center;
     position: relative;
-
 }
 .tutorial{
     background-color:white;
