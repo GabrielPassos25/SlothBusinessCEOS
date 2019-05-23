@@ -1,0 +1,43 @@
+.faq{
+    background-color:white;
+    margin-bottom: 20px;
+    padding: 10px;
+    float: center;
+    width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.faq_h1{
+    font-size: 50;
+    text-align: center;
+    position: center;
+
+}
+.question {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    
+  }
+  
+.question input,.question .answer { 
+    display: none 
+}
+  
+.question label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-left: 10;
+    font-size: 25px;
+    color: #221199;
+}
+  
+.question input:checked ~ .answer {
+    display: block;
+    margin-left: 20;
+    font-size: 20px;
+    font-style: bold;
+    
+  
+}
