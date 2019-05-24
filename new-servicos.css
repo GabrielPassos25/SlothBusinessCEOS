@@ -73,6 +73,7 @@
   border-bottom-right-radius: 50px;
   transition: 0.4s;
   border-color: transparent;
+  cursor: pointer;
   
 }
 
@@ -117,9 +118,17 @@
 .pgto2{grid-column: 3 / 4;}
 .pgto3{grid-column: 4 / 5;}
 
-@media screen and (max-width: 959px) {
+@media(max-width: 768px) {
   /* For mobile phones: */
-  [class='pgto1'] {
+  pgto1 {
+    width: 100%;
+  }
+
+  pgto2 {
+    width: 100%;
+  }
+
+  pgto3 {
     width: 100%;
   }
 }
