@@ -64,7 +64,7 @@ header nav ul li a:hover, header nav ul li a.active{
     font-size:30px;
     margin-top:100px;
 }
-.border{
+.borda{
     display:block;
     margin:auto;
     width:900px;
@@ -105,7 +105,7 @@ header nav ul li a:hover, header nav ul li a.active{
 .section:target{
     height:auto;
 }
-.name{
+.nome{
     display: block;
     margin-bottom:0px;
     text-align:center;
@@ -114,10 +114,10 @@ header nav ul li a:hover, header nav ul li a.active{
 }
 .contato{
     padding-top: 50px;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(imagens/background.png);
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(imagens/slothservicos.jpg);
     background-position: center;
     background-size:cover;
-    background-attachment: fixed;
+    background-attachment: local;
     color: #fff;
 }
 .contato .container h1{
@@ -149,7 +149,7 @@ header nav ul li a:hover, header nav ul li a.active{
     text-align:center;
 }
   
-.hero-image {
+.banner-imagem {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagens/preguica2.jpg");
     height: 50%;
     background-position: center;
@@ -159,7 +159,7 @@ header nav ul li a:hover, header nav ul li a.active{
     margin-top:40px;
 }
   
-.hero-text {
+.banner-texto {
     text-align: center;
     position: relative;
     top: 50%;

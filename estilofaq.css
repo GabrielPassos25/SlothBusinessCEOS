@@ -93,10 +93,10 @@ header nav ul li a:hover, header nav ul li a.active{
 }
 .contato{
     padding-top: 50px;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(imagens/background.png);
-    background-position: cover;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(imagens/slothservicos.jpg);
+    background-position: center;
     background-size:cover;
-    background-attachment: fixed;
+    background-attachment: local;
     color: #fff;
 }
 .contato .container h1{
@@ -127,7 +127,7 @@ header nav ul li a:hover, header nav ul li a.active{
 .contato .container{
     text-align:center;
 }
-.hero-image{
+.banner-imagem{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagens/preguica_faq.jpg");
     height: 41%;
     background-position: fixed;
@@ -137,7 +137,7 @@ header nav ul li a:hover, header nav ul li a.active{
     margin-top:40px;
 }
   
-.hero-text{
+.banner-texto{
     text-align: center;
     position: relative;
     top: 50%;
