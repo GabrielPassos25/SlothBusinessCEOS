@@ -1,0 +1,147 @@
+html,body{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+}
+.faq{
+    background-color:white;
+    margin-bottom: 20px;
+    padding: 10px;
+    float: center;
+    width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.faq_h1{
+    font-size: 50;
+    text-align: center;
+    position: center;
+
+}
+.question {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    
+  }
+  
+.question input,.question .answer { 
+    display: none 
+}
+  
+.question label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-left: 10;
+    font-size: 25px;
+    color: #221199;
+}
+  
+.question input:checked ~ .answer {
+    display: block;
+    margin-left: 20;
+    font-size: 20px;
+    font-style: bold;
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    padding:0 100px;
+    background:#000;
+    width:100%;
+    box-sizing: border-box;
+    z-index:1;
+}
+header .logo{
+    color:#fff;
+    height:50px;
+    line-height:50px;
+    font-size:24px;
+    float:left;
+    font-weight:bold;
+}
+header nav{
+    float:right;
+}
+header nav ul{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+header nav ul li a{
+    height:50px;
+    line-height:50px;
+    padding:0 20px;
+    color:#fff;
+    text-decoration:none;
+}
+header nav ul li a:hover, header nav ul li a.active{
+    color:#fff;
+    background: #221199;
+}
+.menu-toggle{
+    color:#000;
+    float:right;
+    line-height:50px;
+    font-size:24px;
+    cursor:pointer;
+    display:none;
+}
+.contato{
+    padding-top: 50px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(imagens/background.png);
+    background-position: cover;
+    background-size:cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+.contato .container h1{
+    margin-top:2px;
+}
+.contato .row{
+    padding:30px 0;
+    font-size: 22px;
+}
+.footer{
+    background: #000;
+    height: 55px;
+    margin-top: 50px;
+    color: #fff;
+    padding-top:2px;
+}
+.footer p{
+    text-align:center;
+}
+.coluna4{
+    background-color: transparent;
+    margin-top:1px;
+    float: left;
+    width:33%;
+    height: 100px;
+    text-align:center;
+}
+.contato .container{
+    text-align:center;
+}
+.hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagens/preguica_faq.jpg");
+    height: 41%;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    margin-top:40px;
+}
+  
+.hero-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}

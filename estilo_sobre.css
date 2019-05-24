@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    padding:0 100px;
+    background:#000;
+    background-position:fixed;
+    width:100%;
+    box-sizing: border-box;
+    z-index:1;
+}
+header .logo{
+    color:#fff;
+    height:50px;
+    line-height:50px;
+    font-size:24px;
+    float:left;
+    font-weight:bold;
+}
+header nav{
+    float:right;
+}
+header nav ul{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+header nav ul li a{
+    height:50px;
+    line-height:50px;
+    padding:0 20px;
+    color:#fff;
+    text-decoration:none;
+}
+header nav ul li a:hover, header nav ul li a.active{
+    color:#fff;
+    background: #221199;
+}
+.menu-toggle{
+    color:#000;
+    float:right;
+    line-height:50px;
+    font-size:24px;
+    cursor:pointer;
+    display:none;
+}
+.titulo{
+    overflow:hidden;
+    text-align: center;
+    background:white;
+    padding: 60px;
+    margin-top:0px;
+}
+
+.titulo h1{
+    text-transform:uppercase;
+    margin-bottom:20px;
+    color:black;
+    font-size:30px;
+    margin-top:100px;
+}
+.border{
+    display:block;
+    margin:auto;
+    width:900px;
+    height:3px;
+    background:#000;
+    margin-bottom:40px;
+}
+.fotos{
+    margin-bottom:20px
+}
+.fotos a{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height:160px;
+    overflow:hidden;
+    border-radius:50%;
+}
+.fotos a img{
+    width:100%;
+}
+.fotos img{
+    width:300;
+    float:center;
+}
+.fotos a:hover >img{
+    filter:none;
+}
+.section{
+    width:900px;
+    margin:auto;
+    font-size:20px;
+    color: black;
+    text-align: center;
+    height:0;
+    overflow: hidden;
+}
+.section:target{
+    height:auto;
+}
+.name{
+    display: block;
+    margin-bottom:0px;
+    text-align:center;
+    text-transform:uppercase;
+    font-size:22px;
+}
+.contato{
+    padding-top: 50px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(imagens/background.png);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+.contato .container h1{
+    margin-top:2px;
+}
+.contato .row{
+    padding:30px 0;
+    font-size: 22px;
+}
+.footer{
+    background: #000;
+    height: 55px;
+    margin-top: 50px;
+    color: #fff;
+    padding-top:2px;
+}
+.footer p{
+    text-align:center;
+}
+.coluna4{
+    background-color: transparent;
+    margin-top:1px;
+    float: left;
+    width:33%;
+    height: 100px;
+    text-align:center;
+}
+.contato .container{
+    text-align:center;
+}
+  
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagens/preguica2.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: right;
+    margin-top:40px;
+}
+  
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.conteudo{
+    background-color: white;
+    float: right;
+    margin-top: 2px;
+    width: 50%;
+    height: 500px;
+}
+.conteudo h2{
+    text-align:center;
+}
+.conteudo p{
+    text-align:left;
+    margin-top:1px;
+}
+.conteudo .meter{
+    height:7px;
+    position:right;
+    background: #555;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+    padding:10px;
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    width:200px
+}
+.conteudo .meter > span {
+    display:block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: green;
+    background-image: linear-gradient(center bottom,rgb(43,194,83) 37%,rgb(84,240,84) 69%);
+    box-shadow: inset 0 2px 9px  rgba(255,255,255,0.3),inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: right;
+    overflow: hidden;
+}
+.conteudo .mano{
+    margin-top:14px;
+    font-size:16;
+    margin-left:-90px;
+}
+.conteudo .man{
+    margin-top:14px;
+    font-size:16;
+    margin-left:75px;
+}

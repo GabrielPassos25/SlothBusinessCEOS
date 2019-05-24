@@ -1,5 +1,6 @@
-*{font-family: 'Ubuntu', sans-serif}
-    
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
 html,body{
     width:100%;
     height:100%;
@@ -67,7 +68,7 @@ header{
     background:#000;
     width:100%;
     box-sizing: border-box;
-    z-index: 1;
+    z-index:1;
 }
 header .logo{
     color:#fff;
@@ -280,7 +281,7 @@ header nav ul li a:hover, header nav ul li a.active{
     margin-left:75px;
 }
 .tutorial_h1{
-    font-size: 50;
+    font-size: 40px;
     text-align: center;
     position: relative;
 }
@@ -289,24 +290,96 @@ header nav ul li a:hover, header nav ul li a.active{
     margin-bottom: 20px;
     padding: 10px;
     float: center;
-    width: 660px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    
+    margin-top:30px;
 }
-.titulos_tutorial{
-    text-align: left;
-    padding: left;
+.tutorial p{
+    text-align:left;
+    font-size:20px;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.imagem{
+    width:660px;
+    margin-left:170px;
+}
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagens/preguica3.jpeg");
+    height: 41%;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: right;
+    margin-top:40px;
+}
+  
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.lateral {
+    width: 140px;
+    position: absolute;
+    top: 450px;
+    left: 10px;
+    background: #000;
+    padding: 8px 0;
+    border-radius:40px;
+}
+  
+.lateral a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    text-align:center;
+}
+  
+.book-summary a:hover {
+    color: #221199;
+}
+.main {
+    margin-left: 200px;
+    font-size: 28px;
+    padding: 0px 10px;
+}
+.main .tutorial_h1{
+    text-align:center;
+}
+.main .titulos_tutorial{
+    text-align:left;
+    font-size:30px;
+}
+.main .principal{
+    font-size:22px;
+    text-align:center;
+}
+.main .imagem{
+    width:600px;
+    height:400px;
+}
+.main p{
+    font-size: 22px;
 }
 .book-summary{
-    width: 20%;
-    margin:50; padding: 0;
-    
+    width: 190px;
+    position: absolute;
+    top: 450px;
+    left: 10px;
+    background: #000;
+    padding: 8px 0;
     float: left;
     border: 1px solid #CCC;
     text-align: center;   
-    position: relative;
-    
 
 }
 .summary{
@@ -316,19 +389,9 @@ header nav ul li a:hover, header nav ul li a.active{
     list-style-type: none;
     background: rgb(3, 3, 3);
     color: rgb(255, 255, 255);
-    
-   
+    position: center;
 }
 #linha{
     border-bottom: 1px solid #CCC;
-}
-.link{
-    text-decoration: none;
-    color: white;
-}
-.book-summary ul li:hover, ul li.active{
-    background-color: #221199
-}
-.imagem{
-    width:660px;
+    
 }
